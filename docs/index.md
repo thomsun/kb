@@ -15,3 +15,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+Custom create date = {{ git_creation_date_localized }}
+
+Custom update date = {{ git_revision_date_localized }}

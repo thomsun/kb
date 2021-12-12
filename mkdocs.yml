@@ -6,7 +6,11 @@ theme:
 
 plugins:
     - search
-    - git-revision-date
+    - git-revision-date-localized:
+        type: iso_datetime
+        locale: en_US
+        timezone: America/Los_Angeles
+        enable_creation_date: true
 nav:
     - Home: index.md
     - About: about.md
