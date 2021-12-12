@@ -1,6 +1,9 @@
 site_name: Thomsun's KB
 site_url: https://thomsun.github.io/kb/
 
+theme:
+    name: material
+
 nav:
     - Home: index.md
     - About: about.md
