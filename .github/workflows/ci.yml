@@ -1,19 +1,21 @@
-name: auto-publish on push
+name: ci # Any name as you like
 on:
-  push:
+    push:
     branches:
-      - main
+        - main # Branch to track
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - run: pip install mkdocs # 
-      - run: pip install mkdocs-material # 
-      - run: pip install mkdocs-git-revision-date-localized-plugin # 
-      - run: mkdocs gh-deploy --force
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0 # To fetch all history to support mkdocs-git-revision-date-localized-plugin
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: 3.x
+            # Install mkdocs and any themes/plugin here
+            - run: pip install mkdocs
+            - run: pip install mkdocs-material
+            - run: pip install mkdocs-git-revision-date-localized-plugin
+            # Deploy to gh-pages branch
+            - run: mkdocs gh-deploy --force
