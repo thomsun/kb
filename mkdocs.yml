@@ -4,6 +4,9 @@ site_url: https://thomsun.github.io/kb/
 theme:
     name: material
 
+plugins:
+    - search
+    - git-revision-date
 nav:
     - Home: index.md
     - About: about.md
