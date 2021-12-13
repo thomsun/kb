@@ -47,8 +47,8 @@ The easiest way to publish MkDocs website to GitHub Pages in my option is to use
 name: ci # Any name as you like
 on:
     push:
-    branches:
-        - main # Branch to track
+        branches:
+            - main # Branch to track
 jobs:
     deploy:
         runs-on: ubuntu-latest
