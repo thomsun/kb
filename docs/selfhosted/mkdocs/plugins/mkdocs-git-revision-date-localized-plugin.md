@@ -34,6 +34,11 @@ plugins:
 
 With support theme like [`mkdocs-material`](https://github.com/squidfunk/mkdocs-material), the last update value will be displayed at the end of the page automatically.
 
+Page can add creation time or last update time using variables `git_creation_date_localized` and `git_revision_date_localized`
+
+Custom create date = {{ git_creation_date_localized }}
+Custom update date = {{ git_revision_date_localized }}
+
 ### Configuration
 
 See plugin's option [page](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/options/) for details

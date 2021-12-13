@@ -1,18 +1,28 @@
 site_name: Thomsun's KB
 site_url: https://thomsun.github.io/kb/
 
-theme:
-    name: material
-    features:
-        - content.code.annotate
-
 plugins:
     - search
+    - awesome-pages
     - git-revision-date-localized:
         type: iso_datetime
         locale: en_US
         timezone: America/Los_Angeles
         enable_creation_date: true
+        exclude:
+            - index.md
+            - about.md
+
+theme:
+    name: material
+    custom_dir: custom_theme
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.expand
+        - content.code.annotate
+        - toc.integrate
+
 
 markdown_extensions:
     - pymdownx.highlight:
@@ -25,4 +35,5 @@ markdown_extensions:
 
 nav:
     - Home: index.md
+    - ...
     - About: about.md
