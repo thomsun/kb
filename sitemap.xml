@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thomsun.github.io/kb/selfhosted/mkdocs/plugins/mkdocs-awesome-pages-plugin/</loc>
+         <lastmod>2021-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thomsun.github.io/kb/selfhosted/mkdocs/plugins/mkdocs-git-revision-date-localized-plugin/</loc>
          <lastmod>2021-12-13</lastmod>
          <changefreq>daily</changefreq>
