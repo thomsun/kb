@@ -2,62 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thomsun.github.io/kb/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/about/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/Coding%20Interview/Problems/HR/plus_minus/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/Entertainment/Games/Championship%20Manager/cm0102/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/Programming/Java/Stream/stream/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/Disk/format/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/Docker/multiple_compose_files/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/</loc>
+         <lastmod>2022-02-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/cut/</loc>
+         <lastmod>2022-02-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/sed/</loc>
+         <lastmod>2022-02-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/uniq/</loc>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/MkDocs/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/MkDocs/plugins/mkdocs-awesome-pages-plugin/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/MkDocs/plugins/mkdocs-git-revision-date-localized-plugin/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/MkDocs/themes/mkdocs-material/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/samba/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2022-02-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
