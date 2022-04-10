@@ -6,7 +6,7 @@ plugins:
     - awesome-pages
     - git-revision-date-localized:
         type: iso_datetime
-        locale: en_US
+        locale: en
         timezone: America/Los_Angeles
         enable_creation_date: true
         exclude:
