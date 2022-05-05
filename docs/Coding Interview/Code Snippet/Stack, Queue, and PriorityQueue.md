@@ -31,13 +31,13 @@ In summary, we can use `LinkedList` with `Deque` interface as a stack or a queue
 
 Stack
 
-- `stack.push()`
+- `stack.push(element)`
 - `stack.pop()`
 - `stack.peek()`
 
 Queue
 
-- `queue.add()`
+- `queue.add(element)`
 - `queue.remove()`
 - `queue.peek()`
 
@@ -60,3 +60,9 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
 PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b.compareTo(a);
 ```
+
+Operations
+
+- `heap.add(element)`
+- `heap.poll()`
+- `heap.peek()`
