@@ -20,7 +20,7 @@
         - How long we need to keep the data?
     - Peak = Estimate x 2
     - Downtime 99.9% = 1.44 minutes/day = 8.77 hours/year
-    - 1 Billion = 1 GB, 1 Trillion = 1 TB, 1 Quadrillion = 1 PB
+    - 1 Million = 1MB, 1 Billion = 1 GB, 1 Trillion = 1 TB, 1 Quadrillion = 1 PB
 
 1. High Level Design (5-10 minutes)
     - Draw Components: clients, service, database, cache, CDN, message queue
