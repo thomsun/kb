@@ -181,6 +181,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Homebrew/1.%20Installation/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Homebrew/2.%20Recommended%20Bottles/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Locale%20and%20Timezone/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/</loc>
          <lastmod>2023-01-15</lastmod>
          <changefreq>daily</changefreq>
@@ -197,6 +212,21 @@
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/Text%20Manipulation/uniq/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/oh-my-zsh/1.%20Installation/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/oh-my-zsh/2.%20Powerlevel10k/</loc>
+         <lastmod>2023-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/oh-my-zsh/3.%20MISC%20Plugins/</loc>
          <lastmod>2023-01-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -222,11 +252,6 @@
     </url>
     <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/selfhosted/samba/</loc>
-         <lastmod>2023-01-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://thomsun.github.io/kb/System%20Admin/zsh/1.%20oh-my-zsh/</loc>
          <lastmod>2023-01-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
