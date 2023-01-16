@@ -196,6 +196,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Podman/1.%20Installation/</loc>
+         <lastmod>2023-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thomsun.github.io/kb/System%20Admin/Podman/2.%20Commands/</loc>
+         <lastmod>2023-01-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://thomsun.github.io/kb/System%20Admin/TMUX/1.%20Configuration/</loc>
          <lastmod>2023-01-16</lastmod>
          <changefreq>daily</changefreq>
