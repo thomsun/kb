@@ -1,4 +1,4 @@
-# Samba
+# Server
 
 ## Configuration
 
