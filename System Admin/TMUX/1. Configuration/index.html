@@ -1925,6 +1925,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#change-the-number-of-line-when-scrolling-using-mouse-wheel" class="md-nav__link">
+    Change the number of line when scrolling using mouse wheel.
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2550,13 +2557,18 @@
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a># Note that &#39;Enter&#39; will bind to &#39;copy-pipe-and-cancel&#39; which will exit copy-mode
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>bind-key -T copy-mode-vi y send-keys -X copy-selection
 </code></pre></div>
+<h3 id="change-the-number-of-line-when-scrolling-using-mouse-wheel">Change the number of line when scrolling using mouse wheel.</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a># Change the number of line when scrolling using mouse wheel from 5 to 1 line
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>bind-key -T copy-mode-vi WheelUpPane   send-keys -X -N1 scroll-up
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>bind-key -T copy-mode-vi WheelDownPane send-keys -X -N1 scroll-down
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-15 18:20:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-18 21:03:29</span>
       
         <br>
         Created:
