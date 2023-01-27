@@ -2524,14 +2524,16 @@
 <p>Ubuntu
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install ddclient
 </code></pre></div></p>
-<p>This will bring the configuration wizard. If it doesn't or you want to rerun the wizard again, run <code>sudo dpkg-reconfigure ddclient</code>
-- Select dynamic DNS provider - <code>Other</code> and then select <code>cloudflare</code>
-- Leave blank to use default cloudflare protocol
-- Skip proxy
-- Enter username and global API key
-- Select 'Web-based IP discovery service' and select one of the ip discovery service i.e. 'https://api.ipify.org'
-- Select IP checking interval i.e. '300s', '5m',  '7h', or '1d'
-- Enter hostname</p>
+<p>This will bring the configuration wizard. If it doesn't or you want to rerun the wizard again, run <code>sudo dpkg-reconfigure ddclient</code></p>
+<ul>
+<li>Select dynamic DNS provider - <code>Other</code> and then select <code>cloudflare</code></li>
+<li>Leave blank to use default cloudflare protocol</li>
+<li>Skip proxy</li>
+<li>Enter username and global API key</li>
+<li>Select 'Web-based IP discovery service' and select one of the ip discovery service i.e. 'https://api.ipify.org'</li>
+<li>Select IP checking interval i.e. '300s', '5m',  '7h', or '1d'</li>
+<li>Enter hostname</li>
+</ul>
 <h3 id="verify-configuration">Verify configuration</h3>
 <p>See the configuration 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo less /etc/ddclient.conf
@@ -2554,7 +2556,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-17 22:58:16</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-26 19:29:09</span>
       
         <br>
         Created:
