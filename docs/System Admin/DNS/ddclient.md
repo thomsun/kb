@@ -16,6 +16,7 @@ sudo apt install ddclient
 ```
 
 This will bring the configuration wizard. If it doesn't or you want to rerun the wizard again, run `sudo dpkg-reconfigure ddclient`
+
 - Select dynamic DNS provider - `Other` and then select `cloudflare`
 - Leave blank to use default cloudflare protocol
 - Skip proxy
