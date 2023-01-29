@@ -1,21 +1,39 @@
 # Server
 
+## Installation
+
+```
+sudo apt install samba
+```
+
+Check if the service is running
+```
+systemctl status smbd --no-pager -l
+```
+
 ## Configuration
 
-To allow samba to follow symlinks
+Back up the config file
 ```
-# Global
-allow insecure wide links = yes 
-
-# Profile
-follow symlinks = yes
-wide links = yes
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.original
 ```
 
-To allow older version of samba client to connect
-```
-server min protocol = NT1
-```
+Modify the file as following
+
+- To allow samba to follow symlinks
+    ```
+    # Global
+    allow insecure wide links = yes 
+
+    # Profile
+    follow symlinks = yes
+    wide links = yes
+    ```
+
+- To allow older version of samba client to connect
+    ```
+    server min protocol = NT1
+    ```
 
 ## Administration
 To add samba user
