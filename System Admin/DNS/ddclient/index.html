@@ -1537,8 +1537,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#verify-configuration" class="md-nav__link">
-    Verify configuration
+  <a href="#create-api-key" class="md-nav__link">
+    Create API key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-configuration" class="md-nav__link">
+    Update configuration
   </a>
   
 </li>
@@ -2575,34 +2582,42 @@
 <p>I will use this to update my public IP to my cloudflare account</p>
 <h2 id="installation">Installation</h2>
 <h3 id="install-the-package">Install the package</h3>
-<p>Ubuntu
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install ddclient
+<p>It's better to install it from homebrew in order to get latest version. I found that Ubuntu has v3.8.1 that doesn't work well with Cloudflare API
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew install ddclient
 </code></pre></div></p>
-<p>This will bring the configuration wizard. If it doesn't or you want to rerun the wizard again, run <code>sudo dpkg-reconfigure ddclient</code></p>
+<h3 id="create-api-key">Create API key</h3>
 <ul>
-<li>Select dynamic DNS provider - <code>Other</code> and then select <code>cloudflare</code></li>
-<li>Leave blank to use default cloudflare protocol</li>
-<li>Skip proxy</li>
-<li>Enter username and global API key</li>
-<li>Select 'Web-based IP discovery service' and select one of the ip discovery service i.e. 'https://api.ipify.org'</li>
-<li>Select IP checking interval i.e. '300s', '5m',  '7h', or '1d'</li>
-<li>Enter hostname</li>
+<li>Log in to Cloudflare and create an API key by go to <code>My Profile</code> -&gt; <code>API Tokens</code></li>
+<li>Click <code>Create Token</code></li>
+<li>Give the following permission<ul>
+<li>Zone - Zone - Read</li>
+<li>Zone - DSN - Edit</li>
+<li>Zone Resources - All zones</li>
 </ul>
-<h3 id="verify-configuration">Verify configuration</h3>
-<p>See the configuration 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo less /etc/ddclient.conf
-</code></pre></div></p>
-<p>I found that the configure wizard put domain to update without key and it doesn't work. The solution is to add <code>zone</code>  (and optional <code>ssl</code>) before the domain(s) to update
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zone=&lt;domain tld&gt;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ssl=yes
+</li>
+</ul>
+<h3 id="update-configuration">Update configuration</h3>
+<p>Open the file <code>$(brew --prefix)/etc/ddclient.conf</code>. It has templates for different providers. What's work for me with Cloudflare is following
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>use=web, web=https://api.ipify.org/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>protocol=cloudflare,        \
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>zone=domain.tld,            \
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ttl=1,                      \
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>password=&#39;&lt;API key&gt;&#39;
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>domain.tld
 </code></pre></div></p>
 <h3 id="verify-the-result">Verify the result</h3>
 <p>Try to run 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo ddclient -daemon=0 -noquiet -debug 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ddclient -daemon=0 -noquiet -debug -verbose -file $(brew --prefix)/etc/ddclient.conf
+</code></pre></div></p>
+<p>It will show all the interaction with the API.</p>
+<p>Unfortunately, Cloudflare API doesn't update some tld. So, I will need to update IP manually until I pay for my domain
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>You cannot use this API for domains with a .cf, .ga, .gq, .ml, or .tk TLD (top-level domain)
 </code></pre></div></p>
 <h3 id="verify-if-the-daemon-is-running">Verify if the daemon is running</h3>
+<p>Not sure if this works with homebrew version or not
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ps -ef | grep ddclient
-</code></pre></div>
+</code></pre></div></p>
 <p>It should print something like <code>root      107909       1  0 22:39 ?        00:00:00 ddclient - sleeping for 2620 seconds</code></p>
 
   <hr>
@@ -2610,7 +2625,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-26 19:29:09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime">2023-01-28 18:04:00</span>
       
         <br>
         Created:
